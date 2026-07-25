@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOIKOT HOSTING</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: var(--tg-theme-bg-color, #fff);
+            color: var(--tg-theme-text-color, #000);
+            text-align: center;
+            padding: 20px;
+        }
+        .card {
+            background: var(--tg-theme-secondary-bg-color, #f0f0f0);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px auto;
+            max-width: 400px;
+        }
+        h1 { color: var(--tg-theme-button-color, #2481cc); }
+        .btn {
+            background: var(--tg-theme-button-color, #2481cc);
+            color: var(--tg-theme-button-text-color, #fff);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1> SOIKOT HOSTING</h1>
+        <p>স্বাগতম! এটি আপনার টেলিগ্রাম ওয়েব অ্যাপ।</p>
+        <button class="btn" onclick="tg.sendData('clicked')">✅ ক্লিক করুন</button>
+    </div>
+    <script>
+        const tg = window.Telegram.WebApp;
+        tg.expand();
+    </script>
+</body>
+</html>
