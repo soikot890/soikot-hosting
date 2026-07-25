@@ -1,9 +1,3 @@
-"""
-SOIKOT HOSTING — Telegram Bot & Web App Template
-python-telegram-bot v20 + Flask | Ready to Deploy
-Monitor 404 error ঠিক করা হয়েছে
-"""
-
 import asyncio
 import logging
 import time
@@ -23,10 +17,10 @@ from telegram.ext import (
 # ==========================================
 # কনফিগারেশন (এখানে আপনার তথ্য দিন)
 # ==========================================
-TOKEN = os.getenv("BOT_TOKEN", "YOUR_BOT_TOKEN_HERE")
+TOKEN = os.getenv("BOT_TOKEN", "8815527206:AAFuhuOf1Hwko6nYW7d2JEsw3jq9GMD7WJE")
 # হোস্টিং URL (যেমন: https://soikot-hosting.onrender.com)
 # খালি রাখলে লোকালহোস্ট ব্যবহার করবে
-HOSTING_URL = os.getenv("HOSTING_URL", "http://localhost:5000") 
+HOSTING_URL = os.getenv("HOSTING_URL", "https://soikot-hosting.onrender.com") 
 
 logging.basicConfig(
     format="%(asctime)s | %(levelname)s | %(message)s",
